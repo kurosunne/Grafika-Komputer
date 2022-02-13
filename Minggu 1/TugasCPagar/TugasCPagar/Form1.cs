@@ -133,26 +133,37 @@ namespace TugasCPagar
                 else if (mode == 3)
                 {
                     double jarak = Math.Sqrt(Math.Pow(Math.Abs(posy[0]-posy[1]),2) + Math.Pow(Math.Abs(posx[0] - posx[1]), 2));
-                    int x = 0;
-                    int y = Convert.ToInt32(jarak);
+                    int y = 0;
+                    int x = Convert.ToInt32(jarak);
                     double d = 3 - 2 * jarak;
 
-                    while (x<=y)
+                    while (y<=x)
                     {
-                        Console.WriteLine(posx[0] + x +" - "+ posy[0] + y);
-                        pixel.Add(new Rectangle(posx[0] + x, posy[0] + y, 1, 1));
+                        //Console.WriteLine(posx[0] + x +" - "+ posy[0] + y);
+                        pixel.Add(new Rectangle(posx[0] + x, Math.Abs(posy[0]) + y, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] + y, Math.Abs(posy[0]) + x, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] - x, Math.Abs(posy[0]) + y, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] - y, Math.Abs(posy[0]) + x, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] + x, Math.Abs(posy[0]) - y, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] + y, Math.Abs(posy[0]) - x, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] - x, Math.Abs(posy[0]) - y, 1, 1));
+                        pixel.Add(new Rectangle(posx[0] - y, Math.Abs(posy[0]) - x, 1, 1));
+
+                        //Console.WriteLine(posx[0] + x + "    "+ posy[0] + y);
                         if (d<0)
                         {
-                            d = d + 4 * x * 6;
+                            d = d + 4 * y + 6;
+                            y++;
                         }
                         else
                         {
-                            d = d + 4 * (x - y) + 10;
+                            d = d + 4 * (y - x) + 10;
                             y++;
-                            x++;
+                            x--;
                         }
                     }
                 }
+                //Console.WriteLine("selesai");
                 pictureBox1.Refresh();
             }
         }
