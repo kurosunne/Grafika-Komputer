@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<title>WebGL - Simple triangle</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .form{
+                width: 30%;
+
+                padding: 10px;
+            }
+            .gambar{
+                width: 800px;
+            }
+            .ver6{
+                height: 8%;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                padding:0px;
+            }
+            .hor2{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            input{
+                width: 40px;
+                height: 20px;
+            }
+            
+            .main{
+                display: flex;
+                width: 100%;
+                height: 600px;
+            }
+            #generate{
+                background-color: black;
+                color: white;
+                width: 150px;
+                height: 30px;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        </style>
+	</head>
+	<body onload="">
+        <div class="main">
+            <div class="gambar">
+                <canvas id="game-surface" width="800" height="600">
+                    Your browser does not support HTML5
+                </canvas>
+            </div>
+            <div class="form">
+                <center><h1>Generator Segitiga</h1><br>
+                (Semua input berskala 0 sampai 100)</center>
+                <br>
+                <div class="ver6">
+                    Titik Pertama :
+                </div>
+                <div class="ver6">
+                    <div class="hor2">
+                        Posisi
+                    </div>
+                    <div class="hor2">
+                        Warna 
+                    </div>
+                </div>
+                <div class="ver6">
+                    <div class="hor2">
+                        X: <input type="number" id="X1" max="100" min="0" onchange="cek('X1');">
+                        Y: <input type="number" id="Y1" max="100" min="0" onchange="cek('Y1');">
+                    </div>
+                    <div class="hor2">
+                        R: <input type="number" id="R1" max="100" min="0" onchange="cek('R1');">
+                        G: <input type="number" id="G1" max="100" min="0" onchange="cek('G1');">
+                        B: <input type="number" id="B1" max="100" min="0" onchange="cek('B1');">
+                    </div>
+                </div>
+                <div class="ver6">
+                    Titik Kedua
+                </div>
+                <div class="ver6">
+                    <div class="hor2">
+                        Posisi
+                    </div>
+                    <div class="hor2">
+                        Warna 
+                    </div>
+                </div>
+                <div class="ver6">
+                    <div class="hor2">
+                        X: <input type="number" id="X2" max="100" min="0" onchange="cek('X2');">
+                        Y: <input type="number" id="Y2" max="100" min="0" onchange="cek('Y2');">
+                    </div>
+                    <div class="hor2">
+                        R: <input type="number" id="R2" max="100" min="0" onchange="cek('R2');">
+                        G: <input type="number" id="G2" max="100" min="0" onchange="cek('G2');">
+                        B: <input type="number" id="B2" max="100" min="0" onchange="cek('B2');">
+                    </div>
+                </div>
+                <div class="ver6">
+                    Titik Ketiga
+                </div>
+                <div class="ver6">
+                    <div class="hor2">
+                        Posisi
+                    </div>
+                    <div class="hor2">
+                        Warna 
+                    </div>
+                </div>
+                <div class="ver6">
+                    <div class="hor2">
+                        X: <input type="number" id="X3" max="100" min="0" onchange="cek('X3');">
+                        Y: <input type="number" id="Y3" max="100" min="0" onchange="cek('Y3');">
+                    </div>
+                    <div class="hor2">
+                        R: <input type="number" id="R3" max="100" min="0" onchange="cek('R3');">
+                        G: <input type="number" id="G3" max="100" min="0" onchange="cek('G3');">
+                        B: <input type="number" id="B3" max="100" min="0" onchange="cek('B3');">
+                    </div>
+                </div>
+                <br>
+                <center><button id="generate" onclick="InitDemo();">Buat Segitiga!</button></center>
+            </div>
+        </div>
+		<br />
+		
+		<script src="trianGLe.js"></script>
+	</body>
+</html>
