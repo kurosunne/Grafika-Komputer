@@ -1,0 +1,10 @@
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\bin\Debug\cobaGradientBrush.exe.config
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\bin\Debug\cobaGradientBrush.exe
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\bin\Debug\cobaGradientBrush.pdb
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.Form1.resources
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.Properties.Resources.resources
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.exe
+C:\Users\ASUS\Desktop\iSTTS\SEMESTER 4\Grafkom\M2\cobaGradientBrush\cobaGradientBrush\obj\Debug\cobaGradientBrush.pdb
